@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eLL gAllo — Candidate for Practical Activities Monitor</title>
+  <meta name="description" content="Mohamed Amine ARSSALANE — eLL gAllo. Candidate for Practical Activities Monitor at the School of International Education. Leadership, sport, and a record of making activities actually happen." />
+  <meta name="author" content="Mohamed Amine ARSSALANE" />
+  <meta name="theme-color" content="#0d0d0f" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0d0f'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ff6a3d'/%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="eLL gAllo — Practical Activities Monitor Candidate" />
+  <meta property="og:description" content="Why am I the right choice? Former class leader, sports team leader, boxer, event organizer. Discover the evidence." />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Archivo+Black&family=Inter:wght@300..800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300..800&display=swap" rel="stylesheet" />
+
+  <!-- Theme applied before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("ga-theme");
+        if (t !== "light" && t !== "dark") {
+          t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark";
+        }
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#about" id="skipLink">Skip to content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-nav" id="siteNav" aria-label="Main navigation">
+    <a href="#hero" class="nav-brand" data-navlink aria-label="Back to top">
+      <span class="brand-slash" aria-hidden="true">/</span><span class="brand-name" id="navBrand">eLL&nbsp;gAllo</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Sections">
+      <a href="#about" data-navlink id="nl-0">About</a>
+      <a href="#experience" data-navlink id="nl-1">Experience</a>
+      <a href="#why" data-navlink id="nl-2">Why Me</a>
+      <a href="#activities" data-navlink id="nl-3">Activities</a>
+      <a href="#achievements" data-navlink id="nl-4">Proof</a>
+      <a href="#gallery" data-navlink id="nl-5">Gallery</a>
+      <a href="#cv" data-navlink id="nl-6">CV</a>
+      <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+    </nav>
+
+    <div class="nav-controls">
+      <div class="seg" id="langSeg" role="group" aria-label="Language">
+        <button class="seg-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="seg-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+        <span class="seg-thumb" id="langThumb" aria-hidden="true"></span>
+      </div>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light / dark theme">
+        <svg class="ico-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg>
+        <svg class="ico-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+    </div>
+
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinksMobile">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-mobile" id="navLinksMobile" aria-label="Sections (mobile)">
+      <a href="#about" data-navlink id="mn-0"><span class="m-num">01</span><span class="m-txt">About</span></a>
+      <a href="#experience" data-navlink id="mn-1"><span class="m-num">02</span><span class="m-txt">Experience</span></a>
+      <a href="#why" data-navlink id="mn-2"><span class="m-num">03</span><span class="m-txt">Why Me</span></a>
+      <a href="#activities" data-navlink id="mn-3"><span class="m-num">04</span><span class="m-txt">Activities</span></a>
+      <a href="#sports" data-navlink id="mn-4"><span class="m-num">05</span><span class="m-txt">Sport</span></a>
+      <a href="#achievements" data-navlink id="mn-5"><span class="m-num">06</span><span class="m-txt">Proof</span></a>
+      <a href="#gallery" data-navlink id="mn-6"><span class="m-num">07</span><span class="m-txt">Gallery</span></a>
+      <a href="#cv" data-navlink id="mn-7"><span class="m-num">08</span><span class="m-txt">CV</span></a>
+      <div class="m-foot" id="mobileFoot">Practical Activities Monitor · Candidate</div>
+    </nav>
+  </header>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO — the name owns the screen
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-frame" aria-hidden="true"></div>
+      <figure class="hero-media" id="heroMedia" aria-hidden="true">
+        <img id="heroImage" alt="" />
+        <div class="hero-media-shade" aria-hidden="true"></div>
+      </figure>
+
+      <div class="hero-inner">
+        <p class="hero-eyebrow" id="heroEyebrow">
+          <span class="tick" aria-hidden="true"></span>
+          <span id="heroCandWord">Candidate</span> · <span id="heroRole">Practical Activities Monitor</span>
+        </p>
+
+        <h1 class="hero-title" id="heroTitle" aria-label="eLL gAllo">
+          <span class="line line-1"><span class="w" id="heroName1">eLL</span></span>
+          <span class="line line-2"><span class="w" id="heroName2">gAllo</span><span class="hero-dot" aria-hidden="true"></span></span>
+        </h1>
+
+        <div class="hero-low">
+          <div class="hero-intro">
+            <p class="hero-name" id="heroRealName">Mohamed Amine ARSSALANE</p>
+            <p class="hero-lead" id="heroLead">International Economics &amp; Trade student. Former class leader. Sports team leader. Boxer. The one you hand the plan to when the activity actually has to happen.</p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#about" data-scroll><span id="btnDiscover">Discover why</span><span class="btn-arrow" aria-hidden="true">↓</span></a>
+              <a class="btn btn-ghost" href="#achievements" data-scroll id="btnProof">The proof</a>
+            </div>
+          </div>
+          <ul class="hero-meta" id="heroMeta">
+            <li><span class="hm-k">Nationality</span><span class="hm-v" id="metaNationality">Moroccan</span></li>
+            <li><span class="hm-k">School</span><span class="hm-v" id="metaSchool">School of International Education</span></li>
+            <li><span class="hm-k">Major</span><span class="hm-v" id="metaMajor">International Economics &amp; Trade</span></li>
+            <li><span class="hm-k">Born</span><span class="hm-v" id="metaBorn">2008</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ============================================================
+         MARQUEE — running declaration
+    ============================================================ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT — Who is eLL gAllo?
+    ============================================================ -->
+    <section class="section section-about" id="about">
+      <div class="section-head" data-reveal>
+        <p class="kicker"><span class="k-idx">01</span><span id="kick1">Who is eLL gAllo?</span></p>
+        <h2 class="section-title" id="stAbout">The name, <em>the record.</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-statement" data-reveal>
+          <p class="statement-l" id="aboutLead">Most candidates will tell you what they would do. I'd rather show you what I have already done — as a class leader, as a sports team leader, and as the person teachers handed the mic to when it was time to organize something real.</p>
+          <p class="statement-s" id="aboutSub">This page is not a promise. It is an evidence file: the roles I have carried, the sport that built my discipline, the events I helped organize, and the way I work with people. Read it, then decide.</p>
+          <a class="btn btn-line" href="#experience" data-scroll><span id="btnWalk">Walk the record</span><span class="btn-arrow" aria-hidden="true">→</span></a>
+        </div>
+
+        <figure class="about-portrait" data-reveal>
+          <div class="portrait-frame">
+            <img id="aboutImage" alt="Portrait of eLL gAllo" loading="lazy" />
+            <figcaption class="portrait-tag" id="portraitTag"><span id="portraitTag1">MOHAMED AMINE ARSSALANE</span><span id="portraitTag2">ZHENGZHOU UNIVERSITY · SIE</span></figcaption>
+          </div>
+        </figure>
+
+        <div class="about-facts" data-reveal>
+          <h3 class="facts-title" id="factsTitle">ID card</h3>
+          <dl class="facts" id="factList"></dl>
+        </div>
+      </div>
+
+      <div class="counters" id="counters" data-reveal>
+        <div class="counter">
+          <span class="counter-n" data-count="5" data-suffix="+">0</span>
+          <span class="counter-l">sports played &amp; trained</span>
+        </div>
+        <div class="counter">
+          <span class="counter-n" data-count="2">0</span>
+          <span class="counter-l">leadership roles held</span>
+        </div>
+        <div class="counter">
+          <span class="counter-n" data-count="2" data-suffix="">0</span>
+          <span class="counter-l">boxing competition levels</span>
+        </div>
+        <div class="counter">
+          <span class="counter-n" data-count="1" data-prefix="C" data-suffix="">0</span>
+          <span class="counter-l">EF SET English level</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE — the record, editorial timeline
+    ============================================================ -->
+    <section class="section section-experience" id="experience">
+      <div class="section-head section-head-wide" data-reveal>
+        <p class="kicker"><span class="k-idx">02</span><span id="kick2">The record so far</span></p>
+        <h2 class="section-title" id="stExperience">Experience, <em>not claims.</em></h2>
+        <p class="section-sub" id="expSub">Every point on this timeline is something I have actually done. Together they answer the only question that matters: can this person carry Practical Activities — and carry it well?</p>
+      </div>
+
+      <ol class="timeline" id="timeline"><!-- built from data.json --></ol>
+    </section>
+
+    <!-- ============================================================
+         WHY ME — the evidence grid
+    ============================================================ -->
+    <section class="section section-why" id="why">
+      <div class="section-head" data-reveal>
+        <p class="kicker"><span class="k-idx">03</span><span id="kick3">Why am I the right choice?</span></p>
+        <h2 class="section-title" id="stWhy">Because the role needs <em>exactly this.</em></h2>
+        <p class="section-sub" id="whySub">Practical Activities Monitor is not a title, it is a job: logistics, people, plans and pressure. Here is the evidence, point by point.</p>
+      </div>
+
+      <div class="why-grid" id="whyGrid"><!-- built from data.json --></div>
+
+      <div class="quote-band" data-reveal>
+        <blockquote class="pullquote" id="pullquote">
+          <p id="pullText">“Leadership is not doing everything yourself. It's knowing who can do what — and bringing those strengths together.”</p>
+          <cite id="pullCite">— eLL gAllo</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ACTIVITIES — the vision
+    ============================================================ -->
+    <section class="section section-activities" id="activities">
+      <div class="act-head" data-reveal>
+        <p class="kicker"><span class="k-idx">04</span><span id="kick4">The vision</span></p>
+        <h2 class="section-title act-title" id="stActivities">Activities people <em>actually attend.</em></h2>
+        <p class="act-lead" id="activitiesLead">I want our activities to be organized, enjoyable, inclusive — and worth giving up an evening for. No unrealistic promises. Just real, doable ideas run properly:</p>
+      </div>
+
+      <div class="act-body">
+        <div class="pillars" id="pillarList"><!-- built from data.json --></div>
+
+        <aside class="act-list-wrap" data-reveal>
+          <h3 class="act-list-title" id="runningList">The running list</h3>
+          <p class="act-list-note" id="runningNote">An open shortlist — tell me which one you want first.</p>
+          <ul class="act-list" id="activityList"></ul>
+        </aside>
+      </div>
+
+      <div class="act-strip" data-reveal>
+        <p class="act-strip-line" id="activitiesStrip">Inclusive by default · Small enough to actually happen · Organized enough to be worth it</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SPORTS — discipline section
+    ============================================================ -->
+    <section class="section section-sports" id="sports">
+      <div class="sports-bg-word" aria-hidden="true" id="fightWord">FIGHT</div>
+
+      <div class="sports-head" data-reveal>
+        <p class="kicker"><span class="k-idx">05</span><span id="kick5">Sport &amp; discipline</span></p>
+        <h2 class="section-title" id="stSports">The ring taught me <em>what a team is.</em></h2>
+      </div>
+
+      <div class="sports-grid">
+        <div class="sports-story" data-reveal>
+          <p id="sportsStory1">Boxing took me to regional and national competitions. Two things happen when you compete at that level: you learn that preparation beats talent, and you learn that nobody is coming to do the work for you. Both lessons transferred directly to organizing real activities.</p>
+          <p id="sportsStory2">Around the ring, I live in team sports — basketball, volleyball, football — plus the gym and running. Team sports teach you to coordinate and trust; the gym teaches you to show up when nobody is watching. That mix is exactly what running practical activities demands.</p>
+        </div>
+
+        <div class="sports-side" data-reveal>
+          <div class="sports-disciplines" id="disciplineList"></div>
+          <div class="sports-values" id="sportValues"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ACHIEVEMENTS + CERTIFICATES — the proof
+    ============================================================ -->
+    <section class="section section-proof" id="achievements">
+      <div class="section-head section-head-wide" data-reveal>
+        <p class="kicker"><span class="k-idx">06</span><span id="kick6">Achievements &amp; certificates</span></p>
+        <h2 class="section-title" id="stProof">Proof, <em>on paper.</em></h2>
+        <p class="section-sub" id="proofSub">Real documents, verified results, zero inventions. Click any certificate to inspect it full screen.</p>
+      </div>
+
+      <div class="cert-groups" id="certGroups"><!-- built from data.json --></div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY — the personal side
+    ============================================================ -->
+    <section class="section section-gallery" id="gallery">
+      <div class="section-head" data-reveal>
+        <p class="kicker"><span class="k-idx">07</span><span id="kick7">The personal side</span></p>
+        <h2 class="section-title" id="stGallery">Off the clock, <em>still moving.</em></h2>
+        <p class="section-sub" id="gallerySub">Sport, travel, student life. Same person — different gear.</p>
+      </div>
+
+      <div class="gallery-filters" id="galleryFilters" role="tablist" aria-label="Filter gallery"></div>
+      <div class="gallery-grid" id="galleryGrid"><!-- built from data.json --></div>
+    </section>
+
+    <!-- ============================================================
+         CV
+    ============================================================ -->
+    <section class="section section-cv" id="cv">
+      <div class="cv-wrap" data-reveal>
+        <div class="cv-info">
+          <p class="kicker"><span class="k-idx">08</span><span id="kick8">Curriculum vitae</span></p>
+          <h2 class="section-title" id="stCV">One page. <em>Everything.</em></h2>
+          <p class="cv-note" id="cvNote">The complete record on a single page — roles, skills, languages and certificates. Preview it here or take it with you.</p>
+          <div class="cv-actions">
+            <button class="btn btn-solid" id="cvViewBtn" type="button"><span id="cvViewTxt">View CV</span><span class="btn-arrow" aria-hidden="true">↗</span></button>
+            <a class="btn btn-ghost" id="cvDownloadBtn" href="#" download><span id="cvDlTxt">Download CV</span><span class="btn-arrow" aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="cv-preview">
+          <button class="cv-frame" id="cvFrameBtn" type="button" aria-label="Open CV viewer">
+            <div class="cv-sheet">
+              <div class="cv-sheet-head">
+                <span class="cv-sheet-name" id="cvSheetName">MOHAMED AMINE ARSSALANE</span>
+                <span class="cv-sheet-role" id="cvSheetRole">Candidate · Practical Activities Monitor</span>
+              </div>
+              <div class="cv-sheet-body">
+                <span class="sk sk-l" style="width:88%"></span>
+                <span class="sk" style="width:72%"></span>
+                <span class="sk" style="width:81%"></span>
+                <span class="sk sk-gap"></span>
+                <span class="sk" style="width:64%"></span>
+                <span class="sk" style="width:77%"></span>
+                <span class="sk sk-gap"></span>
+                <span class="sk" style="width:58%"></span>
+                <span class="sk" style="width:83%"></span>
+                <span class="sk" style="width:47%"></span>
+              </div>
+              <span class="cv-zoom-hint" id="cvZoomHint">Click to open</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FINAL STATEMENT
+    ============================================================ -->
+    <section class="section-final" id="final">
+      <div class="final-inner" data-reveal>
+        <p class="final-kicker" id="finalKicker">One last thing</p>
+        <p class="final-statement" id="finalLines">
+          <span class="fs-line">Don't just choose someone</span>
+          <span class="fs-line">to <span class="fs-mut">hold the position.</span></span>
+          <span class="fs-line">Choose someone who will</span>
+          <span class="fs-line">make something <em class="fs-accent">happen.</em></span>
+        </p>
+        <div class="final-id">
+          <p class="final-name" id="finalName">eLL gAllo</p>
+          <p class="final-role" id="finalRole">Practical Activities Monitor · Candidate</p>
+        </div>
+        <a href="#hero" class="final-top" data-scroll id="backTopTxt">Back to the top ↑</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <p class="f-brand">eLL&nbsp;gAllo<span aria-hidden="true">.</span></p>
+      <p class="f-line" id="footerLine">Mohamed Amine ARSSALANE — School of International Education. Designed to show, not to tell.</p>
+      <ul class="f-links" id="footerLinks"></ul>
+    </div>
+    <p class="f-meta" id="footerMeta">© 2026 · Built as part of a student election campaign.</p>
+  </footer>
+
+  <!-- Back to top -->    <button class="to-top" id="toTop" type="button" aria-label="Back to top" data-i18n-aria="backTopLabel">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 12V2M7 2L2.5 6.5M7 2l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- ============================================================
+       LIGHTBOX — shared for gallery + certificates
+  ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <button class="lb-close" id="lbClose" type="button" aria-label="Close viewer" data-i18n-aria="closeLabel">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lb-nav lb-prev" id="lbPrev" type="button" aria-label="Previous item" data-i18n-aria="prevLabel">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4L6.5 10l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lb-stage">
+      <img class="lb-img" id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" />
+      <figcaption class="lb-caption">
+        <span class="lb-title" id="lbTitle"></span>
+        <span class="lb-cat" id="lbCat"></span>
+        <span class="lb-count" id="lbCount"></span>
+      </figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" type="button" aria-label="Next item" data-i18n-aria="nextLabel">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.5 4l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <!-- ============================================================
+       CV VIEWER
+  ============================================================ -->
+  <div class="cv-viewer" id="cvViewer" role="dialog" aria-modal="true" aria-label="CV viewer" hidden>
+    <div class="cvv-bar">
+      <span class="cvv-title" id="cvvTitle">CV — Mohamed Amine ARSSALANE</span>
+      <div class="cvv-actions">
+        <a class="btn btn-small btn-ghost" id="cvvDownload" href="#" download><span id="cvvDlTxt">Download</span></a>
+        <button class="lb-close" id="cvvClose" type="button" aria-label="Close CV viewer">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="cvv-body" id="cvvBody">
+      <div class="cvv-loading" id="cvvLoading" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- Fallback when JavaScript is disabled -->
+  <noscript>
+    <div class="noscript-note">This site renders its content from <strong>data/data.json</strong> with JavaScript. Please enable JavaScript to view the full campaign — or open <em>data/data.json</em> directly to read all information.</div>
+  </noscript>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

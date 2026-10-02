@@ -1,0 +1,473 @@
+{
+  "_meta": {
+    "version": "2.0",
+    "note": "Single source of truth. Personal info + media are shared; ALL prose lives in content.en / content.zh so adding a language is a copy-paste. Replace REPLACE_WITH_* placeholders with real URLs and refresh — no code edits needed."
+  },
+
+  "settings": {
+    "defaultLanguage": "en",
+    "defaultTheme": "dark",
+    "languages": [
+      { "code": "en", "label": "EN", "name": "English" },
+      { "code": "zh", "label": "中文", "name": "Chinese" }
+    ]
+  },
+
+  "personal": {
+    "name": "Mohamed Amine ARSSALANE",
+    "nickname": "eLL gAllo",
+    "nationality": { "en": "Moroccan", "zh": "摩洛哥" },
+    "gender": "Male",
+    "dateOfBirth": "2008-10-03",
+    "rollNumber": "202680100115",
+    "major": { "en": "International Economics and Trade", "zh": "国际经济与贸易" },
+    "school": { "en": "School of International Education", "zh": "国际教育学院" },
+    "position": { "en": "Practical Activities Monitor", "zh": "实践委员" }
+  },
+
+  "media": {
+    "profileImage": "REPLACE_WITH_PROFILE_IMAGE_URL",
+    "heroImage": "REPLACE_WITH_HERO_IMAGE_URL",
+    "experience": [
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL"
+    ],
+    "certificates": [
+      "REPLACE_WITH_CERTIFICATE_URL",
+      "REPLACE_WITH_CERTIFICATE_URL",
+      "REPLACE_WITH_CERTIFICATE_URL",
+      "REPLACE_WITH_CERTIFICATE_URL",
+      "REPLACE_WITH_CERTIFICATE_URL"
+    ],
+    "gallery": [
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL",
+      "REPLACE_WITH_IMAGE_URL"
+    ],
+    "cv": "cv/"
+  },
+
+  "content": {
+    "en": {
+      "hero": {
+        "lead": "International Economics & Trade student. Former class leader. Sports team leader. Boxer. The one you hand the plan to when the activity actually has to happen.",
+        "born": "Oct 2008"
+      },
+      "about": {
+        "lead": "Most candidates will tell you what they would do. I'd rather show you what I have already done — as a class leader, as a sports team leader, and as the person teachers handed the mic to when it was time to organize something real.",
+        "sub": "This page is not a promise. It is an evidence file: the roles I have carried, the sport that built my discipline, the events I helped organize, and the way I work with people. Read it, then decide."
+      },
+      "marquee": [
+        "eLL gAllo", "Practical Activities Monitor", "Discipline", "Teamwork",
+        "Organization", "Delegation", "Energy", "Responsibility", "Problem Solving"
+      ],
+      "experience": [
+        {
+          "title": "Class Leadership",
+          "period": "Previously",
+          "description": "I served as the person responsible for my class — the link between students, teachers and administration. I passed information both ways, raised problems until they were solved, and kept class affairs moving. It taught me that a leader is measured by what stops being other people's problem.",
+          "skills": ["Communication", "Responsibility", "Follow-through"]
+        },
+        {
+          "title": "Sports Team Leadership",
+          "period": "Competitions",
+          "description": "I led a sports team through actual competitions. Training schedules, match arrangements, keeping eleven different temperaments pointed at one goal. Under pressure you learn fast: clear roles, honest communication, and nobody left guessing.",
+          "skills": ["Team coordination", "Decision-making", "Working under pressure"]
+        },
+        {
+          "title": "School Event & Activity Organization",
+          "period": "With teachers",
+          "description": "I helped teachers organize school parties, events and activities — the practical side: planning, logistics, dividing tasks, and being the person who checks the details twice. This is the closest thing to a trial run for the role I'm asking for.",
+          "skills": ["Planning", "Logistics", "Delegation"]
+        },
+        {
+          "title": "Private English Tutor",
+          "period": "Teaching",
+          "description": "I tutored English one-to-one. Teaching forces a skill most people skip: reading the other person in real time and adjusting. Explaining something until it lands is communication at its most honest level — and it's the same skill that keeps a team briefed and calm.",
+          "skills": ["Communication", "Adaptability", "Mentoring"]
+        },
+        {
+          "title": "Family Business — Games Trade",
+          "period": "Buying & selling",
+          "description": "I worked in my family's business buying and selling games. Purchasing, pricing, negotiating, dealing with all kinds of customers. When you've handled real transactions, organizing a budget for an activity is not theory — it's a smaller version of what you already do.",
+          "skills": ["Negotiation", "Purchasing & sales", "Dealing with people"]
+        },
+        {
+          "title": "Independent Travel",
+          "period": "Self-managed",
+          "description": "I have traveled independently from a young age. Routes, bookings, budgets, plans that break and get rebuilt on the move. Travel is self-management under real conditions — and it is where I learned to stay calm and solve problems when the plan stops working.",
+          "skills": ["Planning", "Self-management", "Problem solving"]
+        }
+      ],
+      "why": [
+        { "title": "Communication", "text": "I've spent years moving information between people — as a class leader between students and teachers, as a tutor between confusion and clarity, in business between buyer and seller. Ideas only work when they actually arrive.", "icon": "chat" },
+        { "title": "Organization", "text": "Parties, events, school activities — I've been on the organizing side with our teachers, not just in the crowd. Timelines, logistics, checklists, and the unglamorous work that makes an event look effortless.", "icon": "calendar" },
+        { "title": "Teamwork", "text": "Basketball, volleyball, football — years of team sports taught me to coordinate with people, trust roles, and chase one objective together. Teams beat collections of individuals. I know the difference from the inside.", "icon": "users" },
+        { "title": "Leadership", "text": "I've carried real responsibility twice: as the responsible person for my class, and as the leader of a competing sports team. Leadership isn't a title I'm asking for — it's a habit I already have.", "icon": "star" },
+        { "title": "Delegation", "text": "A strong team is not one person doing everything — it's the right person in the right role. I've led enough teams to know how to spot what each person is genuinely good at, and assign accordingly.", "icon": "network" },
+        { "title": "Problem Solving", "text": "Activities rarely go exactly to plan — venues fall through, people arrive late, weather changes its mind. Boxing and independent travel both trained the same reflex: stay calm, adapt, fix it.", "icon": "help" },
+        { "title": "Energy", "text": "Gym, basketball, volleyball, football, running — an active life isn't a hobby, it's the fuel for an active student environment. I naturally bring pace and momentum to everything I organize.", "icon": "bolt" },
+        { "title": "Responsibility", "text": "When I accept responsibility, I take it seriously — as a class leader, as a team captain, as the person trusted with real tasks in a family business. People hand me things because I bring them back done.", "icon": "shield" }
+      ],
+      "quote": {
+        "text": "Leadership is not doing everything yourself. It's knowing who can do what — and bringing those strengths together.",
+        "cite": "eLL gAllo"
+      },
+      "activities": {
+        "lead": "I want our activities to be organized, enjoyable, inclusive — and worth giving up an evening for. No unrealistic promises. Just real, doable ideas run properly:",
+        "strip": "Inclusive by default · Small enough to actually happen · Organized enough to be worth it",
+        "pillars": [
+          { "title": "Organized", "text": "Clear plans, clear roles, start and end on time. An activity without structure is just a gathering." },
+          { "title": "Enjoyable", "text": "Designed around what students actually want — not what looks good on a report." },
+          { "title": "Inclusive", "text": "Different energy levels, different interests, different comfort zones. Everyone gets a way in." },
+          { "title": "Actually happening", "text": "Realistic scale, honest logistics, follow-through. Small and real beats big and fake." }
+        ],
+        "list": [
+          "Friendly sports competitions — football, basketball, volleyball",
+          "Small team challenges and tournaments",
+          "Class events and seasonal parties",
+          "Outdoor activities and group runs",
+          "Cultural exchange evenings — food, music, stories",
+          "Student interaction events that mix people up",
+          "Low-pressure activities for quieter classmates",
+          "Recurring mini-challenges worth showing up for"
+        ]
+      },
+      "sports": {
+        "story1": "Boxing took me to regional and national competitions. Two things happen when you compete at that level: you learn that preparation beats talent, and you learn that nobody is coming to do the work for you. Both lessons transferred directly to organizing real activities.",
+        "story2": "Around the ring, I live in team sports — basketball, volleyball, football — plus the gym and running. Team sports teach you to coordinate and trust; the gym teaches you to show up when nobody is watching. That mix is exactly what running practical activities demands.",
+        "disciplines": [
+          { "name": "Boxing", "note": "Regional & national competitions", "featured": true },
+          { "name": "Gym", "note": "Strength & consistency" },
+          { "name": "Basketball", "note": "Team play" },
+          { "name": "Volleyball", "note": "Coordination" },
+          { "name": "Football", "note": "Team play" },
+          { "name": "Running", "note": "Endurance" }
+        ],
+        "values": ["Discipline", "Teamwork", "Competition", "Consistency", "Energy", "Mental resilience", "Commitment"]
+      },
+      "certificates": [
+        {
+          "title": "Academic",
+          "items": [
+            { "title": "CSCA Certificate", "tag": "Mathematics · 95/100", "issuer": "CSCA" }
+          ]
+        },
+        {
+          "title": "Language",
+          "items": [
+            { "title": "EF SET English — C2", "tag": "C2 Proficiency", "issuer": "EF SET" }
+          ]
+        },
+        {
+          "title": "Business",
+          "items": [
+            { "title": "Introduction to Business", "tag": "Certificate", "issuer": "Saylor Academy" },
+            { "title": "Business and Law", "tag": "Certificate", "issuer": "Saylor Academy" }
+          ]
+        },
+        {
+          "title": "Sports",
+          "items": [
+            { "title": "Sports certificates", "tag": "Add when available", "issuer": "To be attached" }
+          ]
+        }
+      ],
+      "gallery": [
+        { "category": "Sports", "caption": "Training never pauses", "span": "big", "alt": "eLL gAllo training" },
+        { "category": "Sports", "caption": "In the ring", "span": "tall", "alt": "eLL gAllo boxing" },
+        { "category": "Travel", "caption": "Self-managed routes", "alt": "eLL gAllo travelling" },
+        { "category": "Sports", "caption": "Court side", "span": "wide", "alt": "eLL gAllo playing basketball" },
+        { "category": "Student Life", "caption": "Campus days", "alt": "eLL gAllo on campus" },
+        { "category": "Travel", "caption": "Somewhere between cities", "span": "tall", "alt": "eLL gAllo on the road" },
+        { "category": "Activities", "caption": "Helping it all come together", "alt": "eLL gAllo at school activities" },
+        { "category": "Personal", "caption": "Off duty", "alt": "eLL gAllo personal photo" },
+        { "category": "Sports", "caption": "Gym hours", "alt": "eLL gAllo in the gym" },
+        { "category": "Student Life", "caption": "With the team", "span": "wide", "alt": "eLL gAllo with teammates" }
+      ],
+      "cv": {
+        "sheetRole": "Candidate · Practical Activities Monitor",
+        "note": "The complete record on a single page — roles, skills, languages and certificates. Preview it here or take it with you."
+      },
+      "final": {
+        "kicker": "One last thing",
+        "lines": ["Don't just choose someone", "to hold the position.", "Choose someone who will", "make something happen."],
+        "accentWord": "happen.",
+        "role": "Practical Activities Monitor · Candidate"
+      },
+      "footer": {
+        "line": "Mohamed Amine ARSSALANE — School of International Education. Designed to show, not to tell."
+      }
+    },
+
+    "zh": {
+      "hero": {
+        "lead": "国际经济与贸易专业学生。曾任班级负责人。运动队队长。拳击手。当一项活动必须真正办成时，大家会把方案交给的那个人。",
+        "born": "2008年10月"
+      },
+      "about": {
+        "lead": "大多数候选人会告诉你他们将做什么。我更愿意展示我已经做过的事——作为班级负责人、作为运动队队长、作为老师们在组织活动时放心托付的那个人。",
+        "sub": "这个页面不是承诺，而是一份证据档案：我承担过的角色、塑造我纪律性的运动、我协助组织的活动，以及我与他人共事的方式。看完，再做判断。"
+      },
+      "marquee": [
+        "eLL gAllo", "实践委员候选人", "纪律", "团队协作", "组织能力", "知人善任", "活力", "责任心", "解决问题"
+      ],
+      "experience": [
+        {
+          "title": "班级负责人",
+          "period": "曾任",
+          "description": "我曾担任班级负责人——同学、老师与学院之间的桥梁。我双向传递信息，跟进问题直到解决，让班级事务持续运转。这让我明白：一个负责人，是用\u201c别人不再需要操心的事\u201d来衡量的。",
+          "skills": ["沟通", "责任心", "执行跟进"]
+        },
+        {
+          "title": "运动队队长",
+          "period": "参赛经历",
+          "description": "我带领一支运动队参加正式比赛：训练安排、赛事协调，让十几个性格不同的人指向同一个目标。压力之下你学得很快：分工清晰、沟通坦诚、不让任何人掉队。",
+          "skills": ["团队协调", "决策", "抗压能力"]
+        },
+        {
+          "title": "校园活动组织",
+          "period": "协助老师",
+          "description": "我协助老师组织校园晚会、活动和比赛——负责实操层面：规划、后勤、分工，以及把细节检查两遍的那个人。这是对我竞选岗位最接近真实的一次演练。",
+          "skills": ["规划", "后勤", "任务分配"]
+        },
+        {
+          "title": "英语家教",
+          "period": "教学经历",
+          "description": "我做过一对一英语家教。教学逼你掌握一项多数人会忽略的能力：实时读懂对方并随时调整。把一件事讲到对方真正听懂，是最诚实的沟通——也是让团队始终信息同步、心态稳定的同一种能力。",
+          "skills": ["沟通", "应变", "辅导"]
+        },
+        {
+          "title": "家族生意——游戏买卖",
+          "period": "采购与销售",
+          "description": "我在家族的游戏买卖生意里工作：采购、定价、谈判，与形形色色的顾客打交道。真正经手过交易之后，为一场活动做预算就不再是理论——它只是你每天都在做的事的缩小版。",
+          "skills": ["谈判", "采购与销售", "与人打交道"]
+        },
+        {
+          "title": "独立旅行",
+          "period": "自我管理",
+          "description": "我很早就开始独立旅行：路线、订票、预算，以及计划被打断后在路上重建计划。旅行是真实条件下的自我管理——正是在那里，我学会了在计划失效时保持冷静、动手解决。",
+          "skills": ["规划", "自我管理", "解决问题"]
+        }
+      ],
+      "why": [
+        { "title": "沟通", "text": "多年来我一直在人与人之间传递信息——作为班级负责人在同学与老师之间，作为家教在困惑与理解之间，在生意里在买方与卖方之间。想法只有真正送达才有价值。", "icon": "chat" },
+        { "title": "组织", "text": "晚会、活动、比赛——我一直在老师身边负责组织执行，而不只是人群中的一个。时间表、后勤、清单，以及让一场活动看起来毫不费力的那些幕后工作。", "icon": "calendar" },
+        { "title": "团队协作", "text": "篮球、排球、足球——多年的团队运动教会我与人协调、信任分工、朝同一个目标冲刺。团队胜过一群个人。这种区别，我在场上体会过。", "icon": "users" },
+        { "title": "领导力", "text": "我两次承担过真实的责任：作为班级负责人，作为参赛运动队的队长。领导力不是我此刻请求的头衔——它已经是我一直保持的习惯。", "icon": "star" },
+        { "title": "知人善任", "text": "强大的团队不是一个人包揽一切——而是把合适的人放在合适的位置。带过队伍之后我明白：先看清每个人真正擅长什么，再去分配。", "icon": "network" },
+        { "title": "解决问题", "text": "活动很少完全按计划进行——场地有变、人员迟到、天气翻脸。拳击和独立旅行训练出同一种反射：冷静、调整、解决。", "icon": "help" },
+        { "title": "活力", "text": "健身、篮球、排球、足球、跑步——运动不只是爱好，它是活跃的校园氛围的燃料。我组织的每一件事，都自带节奏和推进力。", "icon": "bolt" },
+        { "title": "责任心", "text": "凡是我接下的责任，我都会认真扛住——作为班级负责人、作为队长、作为在家族生意里被托付实事的那个人。别人放心把事情交给我，因为我总会办完交回来。", "icon": "shield" }
+      ],
+      "quote": {
+        "text": "领导力不是事事亲力亲为，而是清楚谁擅长什么——并把这些长处聚到一起。",
+        "cite": "eLL gAllo"
+      },
+      "activities": {
+        "lead": "我希望我们的活动被组织好、真正有趣、人人可参与——并且值得你为它留出一个晚上。不开空头支票，只做真实可行的事：",
+        "strip": "默认包容 · 规模务实 · 组织到位",
+        "pillars": [
+          { "title": "有组织", "text": "计划清晰、分工明确、准时开始按时结束。没有结构的活动只是一次聚集。" },
+          { "title": "有意思", "text": "围绕同学们真正想玩什么来设计——而不是看起来好看就行。" },
+          { "title": "够包容", "text": "不同的精力水平、不同的兴趣、不同的舒适区。每个人都能找到入口。" },
+          { "title": "真办成", "text": "务实的规模、诚实的后勤、可靠的执行。小而真实，胜过大而空洞。" }
+        ],
+        "list": [
+          "友谊体育赛——足球、篮球、排球",
+          "小型团队挑战赛与锦标赛",
+          "班级活动与节日晚会",
+          "户外活动与集体跑",
+          "文化交流之夜——美食、音乐、故事",
+          "打破圈子的同学互动活动",
+          "适合安静同学的低压力活动",
+          "值得反复期待的常设小挑战"
+        ]
+      },
+      "sports": {
+        "story1": "拳击把我带到了区域赛和全国赛的赛场。在那个 level 上你会学到两件事：准备胜过天赋；没有人会替你完成备战。这两课，我直接用在了组织真实活动上。",
+        "story2": "拳台之外，我活跃在篮球、排球、足球这些团队运动里，加上健身和跑步。团队运动教会我协调与信任；健身教会我没人监督时也要出现。这个组合，正是运营实践活动所需要的。",
+        "disciplines": [
+          { "name": "拳击", "note": "区域赛与全国赛", "featured": true },
+          { "name": "健身", "note": "力量与自律" },
+          { "name": "篮球", "note": "团队配合" },
+          { "name": "排球", "note": "协调联动" },
+          { "name": "足球", "note": "团队配合" },
+          { "name": "跑步", "note": "耐力" }
+        ],
+        "values": ["纪律", "团队", "竞争", "坚持", "活力", "心理韧性", "投入"]
+      },
+      "certificates": [
+        {
+          "title": "学术",
+          "items": [
+            { "title": "CSCA 证书", "tag": "数学 · 95/100", "issuer": "CSCA" }
+          ]
+        },
+        {
+          "title": "语言",
+          "items": [
+            { "title": "EF SET 英语 — C2", "tag": "C2 精通级", "issuer": "EF SET" }
+          ]
+        },
+        {
+          "title": "商科",
+          "items": [
+            { "title": "Introduction to Business（商业导论）", "tag": "证书", "issuer": "Saylor Academy" },
+            { "title": "Business and Law（商业与法律）", "tag": "证书", "issuer": "Saylor Academy" }
+          ]
+        },
+        {
+          "title": "体育",
+          "items": [
+            { "title": "体育类证书", "tag": "待获得后添加", "issuer": "待附上" }
+          ]
+        }
+      ],
+      "gallery": [
+        { "category": "运动", "caption": "训练从不停摆", "span": "big", "alt": "eLL gAllo 训练" },
+        { "category": "运动", "caption": "拳台之上", "span": "tall", "alt": "eLL gAllo 拳击" },
+        { "category": "旅行", "caption": "自己规划的路线", "alt": "eLL gAllo 旅行" },
+        { "category": "运动", "caption": "球场边", "span": "wide", "alt": "eLL gAllo 打篮球" },
+        { "category": "校园生活", "caption": "校园的日子", "alt": "eLL gAllo 在校园" },
+        { "category": "旅行", "caption": "两座城市之间", "span": "tall", "alt": "eLL gAllo 在路上" },
+        { "category": "活动", "caption": "把每一场活动拼起来", "alt": "eLL gAllo 参与校园活动" },
+        { "category": "个人", "caption": "训练之外", "alt": "eLL gAllo 个人照片" },
+        { "category": "运动", "caption": "健身时间", "alt": "eLL gAllo 健身房" },
+        { "category": "校园生活", "caption": "与队友在一起", "span": "wide", "alt": "eLL gAllo 与队友" }
+      ],
+      "cv": {
+        "sheetRole": "候选人 · 实践委员",
+        "note": "完整履历浓缩在一页：角色、技能、语言与证书。可在此预览，也可直接带走。"
+      },
+      "final": {
+        "kicker": "最后一句话",
+        "lines": ["别只选一个\u201c占着职位\u201d的人。", "选一个", "真正会把事情", "办成的人。"],
+        "accentWord": "办成的人。",
+        "role": "实践委员 · 候选人"
+      },
+      "footer": {
+        "line": "MOHAMED AMINE ARSSALANE — 国际教育学院。用事实证明，而非空口宣称。"
+      }
+    }
+  },
+
+  "social": [
+    { "label": "Add later (optional)", "url": "REPLACE_WITH_LINK_URL" }
+  ],
+
+  "ui": {
+    "en": {
+      "nav": ["About", "Experience", "Why Me", "Activities", "Proof", "Gallery", "CV"],
+      "mobileNav": ["About", "Experience", "Why Me", "Activities", "Sport", "Proof", "Gallery", "CV"],
+      "kickers": ["Who is eLL gAllo?", "The record so far", "Why am I the right choice?", "The vision", "Sport & discipline", "Achievements & certificates", "The personal side", "Curriculum vitae"],
+      "sectionTitles": {
+        "about": ["The name, <em>the record.</em>"],
+        "experience": ["Experience, <em>not claims.</em>"],
+        "why": ["Because the role needs <em>exactly this.</em>"],
+        "activities": ["Activities people <em>actually attend.</em>"],
+        "sports": ["The ring taught me <em>what a team is.</em>"],
+        "proof": ["Proof, <em>on paper.</em>"],
+        "gallery": ["Off the clock, <em>still moving.</em>"],
+        "cv": ["One page. <em>Everything.</em>"]
+      },
+      "labels": {
+        "discover": "Discover why", "theProof": "The proof", "walkRecord": "Walk the record",
+        "idCard": "ID card", "portraitTag1": "MOHAMED AMINE ARSSALANE", "portraitTag2": "ZHENGZHOU UNIVERSITY · SIE",
+        "sub": "Practical Activities Monitor is not a title, it is a job: logistics, people, plans and pressure. Here is the evidence, point by point.",
+        "expSub": "Every point on this timeline is something I have actually done. Together they answer the only question that matters: can this person carry Practical Activities — and carry it well?",
+        "proofSub": "Real documents, verified results, zero inventions. Click any certificate to inspect it full screen.",
+        "gallerySub": "Sport, travel, student life. Same person — different gear.",
+        "runningList": "The running list", "runningNote": "An open shortlist — tell me which one you want first.",
+        "fightWord": "FIGHT",
+        "cvView": "View CV", "cvDownload": "Download CV", "cvOpen": "Click to open", "cvTitle": "CV — Mohamed Amine ARSSALANE",
+        "cvNotConfigured": "CV URL not configured yet — set it in data/data.json",
+        "cvLoadFail": "Could not load the CV file.", "cvOpenDirect": "Open it directly instead →",
+        "all": "All", "backTop": "Back to the top ↑", "backTopLabel": "Back to top",
+        "lastThing": "One last thing", "citePrefix": "— ",
+        "closeLabel": "Close viewer", "prevLabel": "Previous item", "nextLabel": "Next item", "counterSep": " / ",
+        "closeMenu": "Open menu", "closeMenuOpen": "Open menu",
+        "items": "items", "item": "item",
+        "menuTitle": "Sections"
+      },
+      "facts": [
+        ["Full name", "Mohamed Amine ARSSALANE"],
+        ["Known as", "eLL gAllo"],
+        ["Nationality", "Moroccan"],
+        ["Born", "3 Oct 2008"],
+        ["Roll no.", "202680100115"],
+        ["Major", "International Economics and Trade"],
+        ["School", "School of International Education"],
+        ["Running for", "Practical Activities Monitor"]
+      ],
+      "counters": [
+        { "n": 5, "prefix": "", "suffix": "+", "label": "sports played & trained" },
+        { "n": 2, "prefix": "", "suffix": "", "label": "leadership roles held" },
+        { "n": 2, "prefix": "", "suffix": "", "label": "boxing competition levels" },
+        { "n": 1, "prefix": "C", "suffix": "", "label": "EF SET English level" }
+      ]
+    },
+
+    "zh": {
+      "nav": ["关于", "经历", "为什么是我", "活动愿景", "证明", "相册", "简历"],
+      "mobileNav": ["关于", "经历", "为什么是我", "活动愿景", "体育", "证明", "相册", "简历"],
+      "kickers": ["eLL gAllo 是谁？", "迄今为止的经历", "为什么我是合适人选？", "活动愿景", "体育与纪律", "成绩与证书", "个人一面", "个人简历"],
+      "sectionTitles": {
+        "about": ["这个名字，<em>这份履历。</em>"],
+        "experience": ["用经历，<em>不用口号。</em>"],
+        "why": ["因为这个岗位，<em>正需要这些。</em>"],
+        "activities": ["办同学们<em>真正会参加</em>的活动。"],
+        "sports": ["拳台教会我<em>什么是团队。</em>"],
+        "proof": ["证明，<em>白纸黑字。</em>"],
+        "gallery": "放下训练之后，<em>依然在动。</em>",
+        "cv": ["一页纸，<em>全部内容。</em>"]
+      },
+      "labels": {
+        "discover": "看看为什么", "theProof": "看证据", "walkRecord": "浏览经历",
+        "idCard": "个人名片", "portraitTag1": "MOHAMED AMINE ARSSALANE", "portraitTag2": "郑州大学 · 国际教育学院",
+        "sub": "实践委员不是一个头衔，而是一份工作：后勤、人际、方案与压力。下面是逐条的证明。",
+        "expSub": "这条时间线上的每一站，都是我真正做过的事。它们共同回答那个唯一重要的问题：这个人能不能扛起实践活动——并且扛得漂亮？",
+        "proofSub": "真实文件、可验证的成绩、零虚构。点击任意证书即可全屏查看。",
+        "gallerySub": "运动、旅行、校园。同一个人——另一档速度。",
+        "runningList": "活动清单", "runningNote": "一份开放的短名单——告诉我，你想先要哪一个。",
+        "fightWord": "战斗",
+        "cvView": "查看简历", "cvDownload": "下载简历", "cvOpen": "点击打开", "cvTitle": "简历 — MOHAMED AMINE ARSSALANE",
+        "cvNotConfigured": "简历链接尚未配置——请在 data/data.json 中设置",
+        "cvLoadFail": "简历文件加载失败。", "cvOpenDirect": "改为直接打开 →",
+        "all": "全部", "backTop": "回到顶部 ↑", "backTopLabel": "回到顶部",
+        "lastThing": "最后一句话", "citePrefix": "— ",
+        "closeLabel": "关闭查看器", "prevLabel": "上一张", "nextLabel": "下一张", "counterSep": " / ",
+        "closeMenu": "打开菜单", "closeMenuOpen": "打开菜单",
+        "items": "项", "item": "项",
+        "menuTitle": "页面导航"
+      },
+      "facts": [
+        ["姓名", "Mohamed Amine ARSSALANE"],
+        ["昵称", "eLL gAllo"],
+        ["国籍", "摩洛哥"],
+        ["出生日期", "2008年10月3日"],
+        ["学号", "202680100115"],
+        ["专业", "国际经济与贸易"],
+        ["学院", "国际教育学院"],
+        ["竞选岗位", "实践委员"]
+      ],
+      "counters": [
+        { "n": 5, "prefix": "", "suffix": "+", "label": "长期参与的运动项目" },
+        { "n": 2, "prefix": "", "suffix": "", "label": "担任过的负责角色" },
+        { "n": 2, "prefix": "", "suffix": "", "label": "拳击赛事级别" },
+        { "n": 1, "prefix": "C", "suffix": "", "label": "EF SET 英语等级" }
+      ]
+    }
+  }
+}
