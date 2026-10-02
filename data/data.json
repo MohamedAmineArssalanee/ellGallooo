@@ -26,15 +26,15 @@
   },
 
   "media": {
-    "profileImage": "REPLACE_WITH_PROFILE_IMAGE_URL",
-    "heroImage": "REPLACE_WITH_HERO_IMAGE_URL",
+    "profileImage": "https://cdn.phototourl.com/member/2026-10-02-8257bbac-1cef-4256-847d-db394668d042.jpg",
+    "heroImage": "https://cdn.phototourl.com/member/2026-10-02-c5e225c1-1a34-4ea0-8212-83ed2cbae134.png",
     "experience": [
-      "REPLACE_WITH_IMAGE_URL",
-      "REPLACE_WITH_IMAGE_URL",
-      "REPLACE_WITH_IMAGE_URL",
-      "REPLACE_WITH_IMAGE_URL",
-      "REPLACE_WITH_IMAGE_URL",
-      "REPLACE_WITH_IMAGE_URL"
+      "https://cdn.phototourl.com/member/2026-10-02-dade28ba-6eb8-4b7c-9e37-fa616761579e.png",
+      "https://cdn.phototourl.com/member/2026-10-02-c6369617-78fa-453e-adf3-b6f5b0ae3731.png",
+      "https://cdn.phototourl.com/member/2026-10-02-181b2b60-4b8f-44b4-8fd9-101d2d3f2493.png",
+      "https://cdn.phototourl.com/member/2026-10-02-da9910cf-6045-4824-b655-47a5e5005851.png",
+      "https://cdn.phototourl.com/member/2026-10-02-222b35bd-83a5-4b46-9d8c-91f2f1135762.jpg",
+      "https://cdn.phototourl.com/member/2026-10-02-54069a1e-e418-4518-8573-830046cacb2f.jpg"
     ],
     "certificates": [
       "REPLACE_WITH_CERTIFICATE_URL",
