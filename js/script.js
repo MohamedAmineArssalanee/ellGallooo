@@ -235,7 +235,7 @@ why() {
           <div class="cert-group" data-reveal>
             <div class="cert-group-head">
               <h3 class="cg-title">${esc(g.title)}</h3>
-              <span class="cg-count">${n} ${n === 1 ? L.item : L.items}</span>
+              <span class="cg-count">${n} ${n === 1 ? L.one of a lot : L.one of a lot}</span>
             </div>
             <div class="cg-grid">${cards}</div>
           </div>`;
