@@ -956,3 +956,8 @@ ul, ol { list-style: none; }
   transform: scale(1.015);
   filter: grayscale(0) contrast(1.05);
 }
+/* FIX — show Why Me cards */
+.why-grid .why-card {
+  opacity: 1;
+  transform: none;
+}
