@@ -927,3 +927,32 @@ ul, ol { list-style: none; }
 :root[lang="zh-CN"] .sports-bg-word { font-size: clamp(100px, 18vw, 260px); }
 :root[lang="zh-CN"] .brand-name { font-family: "Archivo Black", "Noto Sans SC", sans-serif; }
 :root[lang="zh-CN"] .sport-card .s-name { font-family: "Noto Sans SC", sans-serif; font-weight: 700; }
+/* ---------- why me image ---------- */
+
+.why-media {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+}
+
+.why-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: initial;
+  filter: grayscale(0.2) contrast(1.03);
+  transition:
+    transform 0.7s var(--e-out),
+    filter 0.5s;
+}
+
+.why-media:hover img {
+  transform: scale(1.015);
+  filter: grayscale(0) contrast(1.05);
+}
