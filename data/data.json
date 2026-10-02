@@ -413,8 +413,8 @@
       ],
       "counters": [
         { "n": 5, "prefix": "", "suffix": "+", "label": "sports played & trained" },
-        { "n": 2, "prefix": "", "suffix": "", "label": "leadership roles held" },
-        { "n": 2, "prefix": "", "suffix": "", "label": "boxing competition levels" },
+        { "n": 5, "prefix": "", "suffix": "+", "label": "leadership roles held" },
+        { "n": 10, "prefix": "", "suffix": "+", "label": "boxing competition levels" },
         { "n": 1, "prefix": "C", "suffix": "", "label": "EF SET English level" }
       ]
     },
