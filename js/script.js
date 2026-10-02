@@ -131,20 +131,38 @@
         .join("");
     },
 
-    /* ---------- why me ---------- */
-    why() {
-      $("#whyGrid").innerHTML = C()
-        .why.map(
-          (w, i) => `
-        <article class="why-card" style="--i:${i}">
-          <span class="why-num">${String(i + 1).padStart(2, "0")}</span>
-          <span class="why-ico" aria-hidden="true">${ICONS[w.icon] || ICONS.star}</span>
-          <h3 class="why-k">${esc(w.title)}</h3>
-          <p class="why-p">${esc(w.text)}</p>
-        </article>`
-        )
-        .join("");
-    },
+   /* ---------- why me ---------- */
+why() {
+  const whyImage = isPlaceholder(DATA.media.whyImage)
+    ? FALLBACK_IMG
+    : DATA.media.whyImage;
+
+  const imageBlock = `
+    <figure class="why-media" data-reveal>
+      <img
+        src="${esc(whyImage)}"
+        alt="${esc(DATA.personal.nickname)} — Practical Activities Monitor"
+        loading="lazy"
+        decoding="async"
+        onerror="this.onerror=null;this.src='${FALLBACK_IMG}'"
+      >
+    </figure>
+  `;
+
+  const cards = C()
+    .why.map(
+      (w, i) => `
+    <article class="why-card" style="--i:${i}">
+      <span class="why-num">${String(i + 1).padStart(2, "0")}</span>
+      <span class="why-ico" aria-hidden="true">${ICONS[w.icon] || ICONS.star}</span>
+      <h3 class="why-k">${esc(w.title)}</h3>
+      <p class="why-p">${esc(w.text)}</p>
+    </article>`
+    )
+    .join("");
+
+  $("#whyGrid").innerHTML = imageBlock + cards;
+},
 
     /* ---------- activities / vision ---------- */
     activities() {
