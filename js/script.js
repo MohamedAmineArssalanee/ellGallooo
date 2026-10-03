@@ -513,84 +513,127 @@ why() {
     });
   }
 
-  /* ==================================================================== *
-   *  LIGHTBOX
-   * ==================================================================== */
-  function openLightbox(items, index) {
-    lightbox.items = items;
-    lightbox.index = index;
-    const lb = $("#lightbox");
-    lb.hidden = false;
-    requestAnimationFrame(() => lb.classList.add("open"));
-    document.body.style.overflow = "hidden";
-    updateLightbox();
-    lightbox.onKey = (e) => {
-      if (e.key === "Escape") closeLightbox();
-      if (e.key === "ArrowRight") stepLightbox(1);
-      if (e.key === "ArrowLeft") stepLightbox(-1);
-    };
-    window.addEventListener("keydown", lightbox.onKey);
-    $("#lbClose").focus();
-  }
+/* ==================================================================== *
+ *  LIGHTBOX
+ * ==================================================================== */
+function openLightbox(items, index) {
+  lightbox.items = items;
+  lightbox.index = index;
+  const lb = $("#lightbox");
+  lb.hidden = false;
+  requestAnimationFrame(() => lb.classList.add("open"));
+  document.body.style.overflow = "hidden";
+  updateLightbox();
 
-  function updateLightbox() {
-    const { items, index } = lightbox;
-    const item = items[index];
-    const lbImg = $("#lbImg");
-    lbImg.src = isPlaceholder(item.image) ? FALLBACK_IMG : item.image;
-    lbImg.alt = item.alt ?? item.title ?? "";
-    $("#lbTitle").textContent = item.title ?? item.caption ?? "";
-    $("#lbCat").textContent = item.category ?? item.issuer ?? "";
-    $("#lbCount").textContent = index + 1 + T().labels.counterSep + items.length;
-    $("#lbPrev").hidden = $("#lbNext").hidden = items.length < 2;
-  }
+  lightbox.onKey = (e) => {
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") stepLightbox(1);
+    if (e.key === "ArrowLeft") stepLightbox(-1);
+  };
 
-  function stepLightbox(dir) {
-    const n = lightbox.items.length;
-    if (!n) return;
-    lightbox.index = (lightbox.index + dir + n) % n;
-    updateLightbox();
-  }
+  window.addEventListener("keydown", lightbox.onKey);
+  $("#lbClose").focus();
+}
 
-  function closeLightbox() {
-    const lb = $("#lightbox");
-    lb.classList.remove("open");
-    document.body.style.overflow = "";
-    setTimeout(() => (lb.hidden = true), 320);
-    window.removeEventListener("keydown", lightbox.onKey);
-  }
+function updateLightbox() {
+  const { items, index } = lightbox;
+  const item = items[index];
+  const lbImg = $("#lbImg");
 
-  function initLightboxControls() {
-    $("#lbClose").addEventListener("click", closeLightbox);
-    $("#lbPrev").addEventListener("click", () => stepLightbox(-1));
-    $("#lbNext").addEventListener("click", () => stepLightbox(1));
-    $("#lightbox").addEventListener("click", (e) => {
-      if (e.target === e.currentTarget) closeLightbox();
-    });
+  lbImg.src = isPlaceholder(item.image) ? FALLBACK_IMG : item.image;
+  lbImg.alt = item.alt ?? item.title ?? "";
 
-    document.addEventListener("click", (e) => {
-      const trigger = e.target.closest("[data-lb]");
-      if (!trigger) return;
-      if (trigger.dataset.lb === "gallery") {
-        const items = C().gallery.map((g, i) => ({
-          image: DATA.media.gallery[i],
-          title: g.caption ?? g.category,
-          category: g.category,
-          alt: g.alt ?? g.caption,
-        }));
-        openLightbox(items, Number(trigger.dataset.i));
-      } else if (trigger.dataset.lb === "certs") {
-        const g = Number(trigger.dataset.g);
-        const items = C().certificates[g].items.map((c) => ({
-          image: DATA.media.certificates[g],
-          title: c.title,
-          issuer: c.issuer ?? C().certificates[g].title,
-          alt: c.title,
-        }));
-        openLightbox(items, Number(trigger.dataset.i));
+  $("#lbTitle").textContent = item.title ?? item.caption ?? "";
+  $("#lbCat").textContent = item.category ?? item.issuer ?? "";
+  $("#lbCount").textContent =
+    index + 1 + T().labels.counterSep + items.length;
+
+  $("#lbPrev").hidden = $("#lbNext").hidden = items.length < 2;
+}
+
+function stepLightbox(dir) {
+  const n = lightbox.items.length;
+  if (!n) return;
+
+  lightbox.index = (lightbox.index + dir + n) % n;
+  updateLightbox();
+}
+
+function closeLightbox() {
+  const lb = $("#lightbox");
+  lb.classList.remove("open");
+  document.body.style.overflow = "";
+
+  setTimeout(() => (lb.hidden = true), 320);
+  window.removeEventListener("keydown", lightbox.onKey);
+}
+
+function initLightboxControls() {
+  $("#lbClose").addEventListener("click", closeLightbox);
+  $("#lbPrev").addEventListener("click", () => stepLightbox(-1));
+  $("#lbNext").addEventListener("click", () => stepLightbox(1));
+
+  $("#lightbox").addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) closeLightbox();
+  });
+
+  document.addEventListener("click", (e) => {
+    const trigger = e.target.closest("[data-lb]");
+    if (!trigger) return;
+
+    /* ---------------- GALLERY ---------------- */
+    if (trigger.dataset.lb === "gallery") {
+      const items = C().gallery.map((g, i) => ({
+        image: DATA.media.gallery[i],
+        title: g.caption ?? g.category,
+        category: g.category,
+        alt: g.alt ?? g.caption,
+      }));
+
+      openLightbox(items, Number(trigger.dataset.i));
+    }
+
+    /* ---------------- CERTIFICATES ---------------- */
+    else if (trigger.dataset.lb === "certs") {
+      const groups = C().certificates;
+
+      /*
+       * Convert the grouped certificates into ONE flat list.
+       * This matches DATA.media.certificates, which is also a flat array.
+       */
+      const items = [];
+
+      groups.forEach((group, groupIndex) => {
+        group.items.forEach((c, itemIndex) => {
+          const globalIndex = items.length;
+
+          items.push({
+            image: DATA.media.certificates[globalIndex],
+            title: c.title,
+            issuer: c.issuer ?? group.title,
+            alt: c.title,
+          });
+        });
+      });
+
+      /*
+       * Find the clicked certificate's position
+       * inside the complete certificate list.
+       */
+      let globalIndex = 0;
+      const clickedGroup = Number(trigger.dataset.g);
+      const clickedItem = Number(trigger.dataset.i);
+
+      for (let i = 0; i < clickedGroup; i++) {
+        globalIndex += groups[i].items.length;
       }
-    });
-  }
+
+      globalIndex += clickedItem;
+
+      openLightbox(items, globalIndex);
+    }
+  });
+}
 
   /* ==================================================================== *
    *  CV VIEWER
