@@ -207,42 +207,65 @@ why() {
     },
 
     /* ---------- certificates ---------- */
-    certificates() {
-      const L = T().labels;
-      $("#certGroups").innerHTML = C()
-        .certificates.map((g, gi) => {
-          const n = g.items.length;
-          const cards = g.items
-            .map((c, ci) => {
-              const tall = n > 2 && ci === 0 ? "tall" : "";
-              const wide = !isPlaceholder(DATA.media.certificates[gi]) && c.wide ? "wide" : "";
-              return `
-              <button class="cert-card ${tall} ${wide}" type="button"
-                      data-lb="certs" data-g="${gi}" data-i="${ci}"
-                      aria-label="Open certificate: ${esc(c.title)}">
-                ${img(DATA.media.certificates[gi], `alt="${esc(c.title)}" ${isPlaceholder(DATA.media.certificates[gi]) ? 'data-pending="true"' : ""}`)}
-                <span class="cert-meta">
-                  <span class="cert-meta-left">
-                    <span class="cert-tag">${esc(c.tag ?? g.title)}</span>
-                    <span class="cert-name">${esc(c.title)}</span>
-                    ${c.issuer ? `<span class="cert-issuer">${esc(c.issuer)}</span>` : ""}
-                  </span>
-                </span>
-              </button>`;
-            })
-            .join("");
+  certificates() {
+  const L = T().labels;
+  let certIndex = 0;
+
+  $("#certGroups").innerHTML = C()
+    .certificates.map((g, gi) => {
+      const n = g.items.length;
+
+      const cards = g.items
+        .map((c, i) => {
+          const certImage = DATA.media.certificates[certIndex++];
+
+          const tall = n > 2 && c === 0 ? "tall" : "";
+          const wide =
+            !isPlaceholder(certImage) && c.width ? "wide" : "";
+
           return `
-          <div class="cert-group" data-reveal>
-            <div class="cert-group-head">
-              <h3 class="cg-title">${esc(g.title)}</h3>
-              <span class="cg-count">${n} one of a lot</span>
-            </div>
-            <div class="cg-grid">${cards}</div>
-          </div>`;
+          <button class="cert-card ${tall} ${wide}" type="button"
+            data-lb-label="${esc(c.title)}"
+            data-src="${esc(certImage)}"
+            aria-label="${esc(c.title)}">
+
+            ${img(
+              certImage,
+              `alt="${esc(c.title)}" ${
+                isPlaceholder(certImage)
+                  ? 'data-pending="true"'
+                  : ""
+              }`
+            )}
+
+            <span class="cert-meta">
+              <span class="cert-meta-left">
+                <span class="cert-tag">${esc(c.tag || g.title)}</span>
+                <span class="cert-name">${esc(c.title)}</span>
+                ${
+                  c.issuer
+                    ? `<span class="cert-issuer">${esc(c.issuer)}</span>`
+                    : ""
+                }
+              </span>
+            </span>
+          </button>`;
         })
         .join("");
-    },
 
+      return `
+        <div class="cert-group" data-reveal>
+          <div class="cert-group-head">
+            <h3 class="cg-title">${esc(g.title)}</h3>
+            <span class="cg-count">${n} one of a lot</span>
+          </div>
+
+          <div class="cg-grid">${cards}</div>
+        </div>
+      `;
+    })
+    .join("");
+},
     /* ---------- gallery ---------- */
     gallery() {
       const items = C().gallery;
