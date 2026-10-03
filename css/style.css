@@ -1078,3 +1078,128 @@ ul, ol { list-style: none; }
   opacity: 1;
   transform: none;
 }
+/* ==========================================================================
+   FINAL MOBILE FIX
+   ========================================================================== */
+
+@media (max-width: 860px) {
+
+  /* Prevent sections/components from exceeding the viewport */
+  .section,
+  .section > *,
+  .section-head,
+  .why-grid,
+  .why-media,
+  .why-card,
+  .about-grid,
+  .timeline,
+  .tl-item,
+  .tl-grid,
+  .act-body,
+  .pillars,
+  .cert-groups,
+  .cg-grid,
+  .gallery-grid,
+  .cv-wrap {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* WHY ME */
+  .why-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .why-card {
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .why-media {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .why-media img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* TIMELINE */
+  .tl-grid,
+  .tl-item:nth-child(even) .tl-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tl-media {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  /* ACTIVITIES */
+  .act-body {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars {
+    grid-template-columns: 1fr;
+  }
+
+  /* CERTIFICATES */
+  .cg-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cert-card {
+    min-width: 0;
+  }
+
+  /* GALLERY */
+  .gallery-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Text must never force horizontal width */
+  .section-title,
+  .section-sub,
+  .why-p,
+  .tl-desc,
+  .act-lead,
+  .cv-note {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-card {
+    padding: 24px 20px;
+  }
+
+  .why-ico {
+    right: 18px;
+  }
+
+  .cg-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cert-card.wide {
+    grid-column: span 2;
+  }
+}
