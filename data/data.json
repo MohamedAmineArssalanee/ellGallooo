@@ -146,10 +146,10 @@
         ]
       },
       "sports": {
-        "story1": "Boxing took me to regional and national competitions. Two things happen when you compete at that level: you learn that preparation beats talent, and you learn that nobody is coming to do the work for you. Both lessons transferred directly to organizing real activities.",
+        "story1": "Boxing took me to regional, national and continental competitions. Two things happen when you compete at that level: you learn that preparation beats talent, and you learn that nobody is coming to do the work for you. Both lessons transferred directly to organizing real activities.",
         "story2": "Around the ring, I live in team sports — basketball, volleyball, football — plus the gym and running. Team sports teach you to coordinate and trust; the gym teaches you to show up when nobody is watching. That mix is exactly what running practical activities demands.",
         "disciplines": [
-          { "name": "Boxing", "note": "Regional & national competitions", "featured": true },
+          { "name": "Boxing", "note": "Regional & national & continental competitions", "featured": true },
           { "name": "Gym", "note": "Strength & consistency" },
           { "name": "Basketball", "note": "Team play" },
           { "name": "Volleyball", "note": "Coordination" },
