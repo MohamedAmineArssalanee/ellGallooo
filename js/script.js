@@ -225,9 +225,12 @@ why() {
 
           return `
           <button class="cert-card ${tall} ${wide}" type="button"
-            data-lb-label="${esc(c.title)}"
-            data-src="${esc(certImage)}"
-            aria-label="${esc(c.title)}">
+  data-lb="certs"
+  data-g="${gi}"
+  data-i="${i}"
+  data-lb-label="${esc(c.title)}"
+  data-src="${esc(certImage)}"
+  aria-label="${esc(c.title)}">
 
             ${img(
               certImage,
